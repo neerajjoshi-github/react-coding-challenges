@@ -9,11 +9,13 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import HexGuesserGame from "./pages/HexGuesserGame.tsx";
+import MakePoints from "./pages/MakePoints.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="hex_gusser_game" element={<HexGuesserGame />} />
+      <Route path="points" element={<MakePoints />} />
     </Route>
   )
 );

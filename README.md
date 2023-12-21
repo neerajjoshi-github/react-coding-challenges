@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# React Coding Challenges
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Index
 
-Currently, two official plugins are available:
+1. [Hex Guesser Game](#hex-guesser-game)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 1. Hex Guesser Game
 
-## Expanding the ESLint configuration
+### Description
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Create a hex color code guesser game where the user can interact with color options and guess the correct color code.
 
-- Configure the top-level `parserOptions` property like this:
+![Hex Guesser Game](/public/images/readme/hex-guesser-game.gif)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Display the Color:** Show the hex color code to the user.
+
+- **Provide Options:** Offer multiple color options for the user to choose from.
+
+- **Correct Option:** Ensure that one of the options is the correct hex color code.
+
+- **User Feedback:** Provide feedback to the user indicating whether their chosen color is correct or wrong.
+
+- **Reset or Next Question:** After receiving feedback, reset the game or provide an option to move to the next question.
+
+### Optional Features
+
+- **Win Streak Display:** Display the win streak of the player to enhance the gaming experience.
+
+- **Responsiveness:** Make the game responsive to ensure a consistent user experience across different devices.
+
+- **Color Information:** Optionally, provide information to the user about the correct and incorrect color options.

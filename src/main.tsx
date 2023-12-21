@@ -8,9 +8,14 @@ import {
   Route,
   createRoutesFromElements,
 } from "react-router-dom";
+import HexGuesserGame from "./pages/HexGuesserGame.tsx";
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" element={<App />}></Route>)
+  createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      <Route path="hex_gusser_game" element={<HexGuesserGame />} />
+    </Route>
+  )
 );
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

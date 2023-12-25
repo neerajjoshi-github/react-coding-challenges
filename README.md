@@ -10,7 +10,7 @@
 
 Create a hex color code guesser game where the user can interact with color options and guess the correct color code.
 
-![Hex Guesser Game](/public/images/readme/hex-guesser-game.gif){: height="500px"}
+<img src="/public/images/readme/hex-guesser-game.gif" alt="Hex Color Game"  height="500px">
 
 ### Features
 
@@ -38,7 +38,7 @@ Create a hex color code guesser game where the user can interact with color opti
 
 Create an interactive application where users can add points by clicking on the screen. Implement undo and redo functionality to remove and add points, respectively.
 
-![Hex Guesser Game](/public/images/readme/make-points.gif){: height="500px"}
+<img src="/public/images/readme/make-points.gif" alt="Hex Color Game" height="500px">
 
 ### Features
 
@@ -53,3 +53,41 @@ Create an interactive application where users can add points by clicking on the 
 - **Point Counter:** Display a counter indicating the number of points on the screen.
 
 - **Reset Button:** Optionally, include a button to reset the points and start over.
+
+## 3. Memory Card Game
+
+## Description
+
+Your task is to create a memory card game with a 2 x 3 grid, consisting of 6 cards. There should be pairs of cards with the same values, and each pair should appear only once in the entire set.
+
+At the start, all card values are concealed. The gameplay involves revealing the values of cards by clicking on them. When two cards with matching values are clicked, they are removed from the screen. In case of a mismatch, the cards are closed. The objective is to successfully match and remove all cards to achieve victory.
+
+<img src="/public/images/readme/card_memory_game.gif" alt="Hex Color Game" height="500px">
+
+## Features
+
+1. **Card Value Display:**
+
+   - Allow users to click on a card to reveal its value.
+
+2. **Pair Matching:**
+
+   - Implement logic to identify and remove pairs of cards with identical values.
+
+3. **Winning Condition:**
+
+   - Declare victory when all cards have been successfully matched and removed.
+
+## Optional Features
+
+1. **Move Counter:**
+
+   - Implement a move counter to track the number of moves it takes for the player to win.
+
+2. **Variable Card Selection:**
+
+   - Provide an option for users to customize the game by selecting a different number of cards, enhancing the difficulty level.
+
+3. **Card Shuffling:**
+
+   - Add a feature to shuffle the positions of cards at the beginning of each game, increasing the randomness and challenge for players.

@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="min-h-screen w-screen flex items-center justify-center p-5">
+    <div className="min-h-screen w-full flex items-center justify-center px-2">
       <Outlet />
     </div>
   );

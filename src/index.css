@@ -86,5 +86,28 @@
 }
 
 body {
-  @apply bg-background text-text;
+  @apply bg-background text-text overflow-x-hidden;
+}
+
+/* Memory Card Game */
+.card {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-inner {
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
 }

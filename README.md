@@ -1,7 +1,7 @@
 # React Coding Challenges
 
 This repo contains 8 react coding challenges. And my solutions for all those challenges.
-You can explore the deployed version of all these challenges by visiting [React Coding Challenges.](https://react-coding-challenges.vercel.app/)
+You can explore the deployed version of all these challenges by visiting [React Coding Challenges.](https://react-coding-challenges-eosin.vercel.app/)
 
 ## Solution Structure
 

@@ -17,14 +17,14 @@ I have used **React**, **Tailwind Css**, **React Icons** and **Vite** for this p
 
 ## Index
 
-[1. Hex Guesser Game](#1-hex-guesser-game)
-[2. Make Points](#2-make-points)
-[3. Memory Card Game](#3-memory-card-game)
-[4. Text Analyzer](#4-text-analyzer)
-[5. Stopwatch](#5-stopwatch)
-[6. Analog Clock](#6-analog-clock)
-[7. Pomodoro Timer](#7-pomodoro-timer)
-[8. Breaking Bad](#8-breaking-bad)
+1. [Hex Guesser Game](#1-hex-guesser-game)
+2. [Make Points](#2-make-points)
+3. [Memory Card Game](#3-memory-card-game)
+4. [Text Analyzer](#4-text-analyzer)
+5. [Stopwatch](#5-stopwatch)
+6. [Analog Clock](#6-analog-clock)
+7. [Pomodoro Timer](#7-pomodoro-timer)
+8. [Breaking Bad](#8-breaking-bad)
 
 ## 1. Hex Guesser Game
 

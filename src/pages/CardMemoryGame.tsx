@@ -114,11 +114,11 @@ const CardMemoryGame = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-6 w-full h-screen py-4">
-      <h1 className="text-5xl font-semibold text-center">Memory Game</h1>
+    <div className="flex flex-col items-center gap-6 w-full h-screen pt-10 pb-4 px-2 md:px-4">
+      <h1 className="challenge-heading">Memory Game</h1>
       <div className="flex w-full items-center justify-between sm:px-2 md:px-10">
         <select
-          className="w-36 h-10 text-lg font-semibold px-2 text-center border-2 border-primary-600"
+          className="w-36 h-10 text-lg bg-background-200 font-semibold px-2 text-center border-2 border-primary-500"
           onChange={onOptionChange}
         >
           {options.map((opt) => {
@@ -149,17 +149,17 @@ const CardMemoryGame = () => {
                 onClick={() => onCardClick(card)}
                 disabled={card.removed}
                 className={`${!card.shown ? "flipped" : ""}
-         card transition duration-500 w-full h-full max-w-40 max-h-60 self-center place-self-center justify-self-center disabled:cursor-default disabled:border-none select-none border text-base sm:text-3xl md:text-4xl flex items-center justify-center
+         card transition duration-500 w-full h-full max-w-40 max-h-60 self-center place-self-center justify-self-center disabled:cursor-default disabled:border-none select-none border-2 text-base sm:text-3xl md:text-4xl font-semibold flex items-center justify-center
               `}
               >
                 {!card.removed && (
                   <div className="card-inner w-full h-full transition duration-500">
-                    <div className="card-front absolute w-full h-full flex items-center justify-center bg-purple-200">
+                    <div className="card-front absolute w-full h-full flex items-center justify-center bg-accent-400">
                       <span>
                         {card.shown && !card.removed ? card.value : ""}
                       </span>
                     </div>
-                    <div className="card-back absolute w-full h-full bg-primary-400 flex items-center justify-center">
+                    <div className="card-back absolute w-full h-full bg-background-500 flex items-center justify-center">
                       <FaBolt className="text-white text-3xl sm:text-4xl" />
                     </div>
                   </div>

@@ -59,8 +59,8 @@ const HexGuesserGame = () => {
   };
 
   return (
-    <div className="max-sm:w-full flex flex-col gap-5 items-center">
-      <h1 className="text-4xl sm:text-5xl font-bold">Hex Guesser Game</h1>
+    <div className="max-sm:w-full flex flex-col gap-5 items-center px-2 md:px-4">
+      <h1 className="challenge-heading">Hex Guesser Game</h1>
       <div className="font-semibold w-full flex items-center justify-between">
         <span>Streak : {streak}</span>
         {userSelectedColor && (
@@ -91,7 +91,7 @@ const HexGuesserGame = () => {
                 borderColor: userSelectedColor ? "white" : "",
               }}
               disabled={!!userSelectedColor}
-              className="disabled:cursor-not-allowed border border-slate-500 px-4 py-2 rounded-md font-semibold"
+              className="disabled:cursor-not-allowed border border-background-50 px-4 py-2 rounded-md font-semibold"
             >
               {option}
             </button>

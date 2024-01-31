@@ -30,31 +30,36 @@ const MakePoints = () => {
     setEndingIndex(endingIndex + 1);
   };
   return (
-    <div className="w-full h-auto">
-      <div className="flex items-center gap-4 mb-4">
-        <button
-          disabled={endingIndex === 0}
-          onClick={prevClickHandler}
-          className="disabled:cursor-not-allowed disabled:bg-primary-400 py-2 px-4 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-md"
-        >
-          Undo
-        </button>
-        <button
-          disabled={endingIndex === points.length}
-          onClick={nextClickHandler}
-          className="disabled:cursor-not-allowed disabled:bg-primary-400 py-2 px-4 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-md"
-        >
-          Redo
-        </button>
+    <div className="w-full h-screen px-2 md:px-4 pt-10 pb-4 flex flex-col">
+      <h3 className="challenge-heading md:hidden text-center">Make Points</h3>
+      <div className="flex items-center justify-between my-4">
+        <div className="flex items-center gap-4">
+          <button
+            disabled={endingIndex === 0}
+            onClick={prevClickHandler}
+            className="disabled:cursor-not-allowed disabled:bg-primary-400 py-2 px-4 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-md"
+          >
+            Undo
+          </button>
+          <button
+            disabled={endingIndex === points.length}
+            onClick={nextClickHandler}
+            className="disabled:cursor-not-allowed disabled:bg-primary-400 py-2 px-4 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-md"
+          >
+            Redo
+          </button>
+        </div>
 
-        <div className="ml-auto font-semibold flex items-center gap-2">
+        <h3 className="challenge-heading max-md:hidden">Make Points</h3>
+
+        <div className="font-semibold flex items-center gap-2">
           Points On Screen :{" "}
           <span className="text-lg">{points.slice(0, endingIndex).length}</span>
         </div>
       </div>
       <div
         onClick={onClickHandler}
-        className="w-full h-[80vh] border border-slate-800"
+        className="w-full flex-1 border-2 border-primary-500 rounded-md"
       >
         {points.slice(0, endingIndex).map((point) => {
           return (
@@ -64,7 +69,7 @@ const MakePoints = () => {
                 left: point.x,
               }}
               key={point.id}
-              className="fixed w-1 h-1 rounded-full bg-primary-600"
+              className="fixed w-[5px] h-[5px] rounded-full bg-accent-500"
             ></div>
           );
         })}
